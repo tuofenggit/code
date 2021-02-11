@@ -6,8 +6,9 @@ public class Test {
         ColorWrite colorWrite = new ColorWrite("绿色");
         FontWrite fontWrite = new FontWrite("13");
 
-        RefinedWordWrite write = new RefinedWordWrite(colorWrite, null);
+        RefinedWordWrite write = new RefinedWordWrite(colorWrite);
         write.print();
-
+        write = new RefinedWordWrite(fontWrite);
+        write.print();
     }
 }
